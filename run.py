@@ -15,6 +15,7 @@ with open(dir_path+"/urls.txt", 'r') as f:
     for line in f:
         line=line.replace("[href]","")
         line=line.replace("[form]","")
+        line=line.replace("[script]","")
         if str.strip(line) in newfile:
             pass
         else:
